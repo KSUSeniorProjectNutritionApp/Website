@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #f4ece2;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #d67358;
+}
+
+h1, .overview-title {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em 0;
+    color: #b35949;
+}
+
+p, .overview-paragraph {
+    font-size: 1em;
+    margin: 0.5em 20px;
+}
+
+.overview {
+    background-color: #e67345;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.overview-title, .overview-paragraph {
+    color: #ffffff;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffb07c;
+    overflow: hidden;
+    padding: 0;
+}
+
+.topnav a {
+    flex-grow: 1;
+    text-align: center;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #f8c8b0; 
+    color: #333;
+}
+
+.topnav a.active {
+    background-color: #f4a181;
+    color: #fff;
+}
+
+.topnav-centered {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.topnav-right {
+    display: flex;
+    flex-grow: 1;
+}
+
+.video-frame {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffb07c;
+    width: 1080px;
+    height: 720px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.team-member {
+    background-color: #f4a181;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-member p {
+    color: white;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav-right, .topnav-centered {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
