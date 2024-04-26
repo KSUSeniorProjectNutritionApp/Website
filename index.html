@@ -3,89 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Nutrition App - Home</title>
-
-    <style>
-        body {
-            background-color: darkorange;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            color: white;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        p {
-            color: white;
-            font-family: Arial;
-            font-size: 20px;
-        }
-
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-
-        table.center {
-          margin-left: auto; 
-          margin-right: auto;
-        }
-
-    .topnav {
-      position: relative;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-
-    .topnav-centered a {
-      float: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .topnav-right {
-      float: right;
-    }
-
-    /* Responsive navigation menu (for mobile devices) */
-    @media screen and (max-width: 600px) {
-      .topnav a, .topnav-right {
-        float: none;
-        display: block;
-      }
-  
-      .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-      }
-    }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -96,54 +14,56 @@
     <div class="topnav">
 
         <!-- Centered link -->
-        <div class="topnav-centered">
-            <a href="./index.html" class="active">Home</a>
-        </div>
+       
+        <a href="./index.html" class="active">Home</a>
+        
 
         <!-- Left-aligned links (default) -->
         <a href="./Final Report.html">Final Report</a>
         <a href="./Final Video Presentation.html">Video Presentation</a>
 
         <!-- Right-aligned links -->
-        <div class="topnav-right">
-            <a href="https://github.com/KSUSeniorProjectNutritionApp">Github</a>
-        </div>
+        
+        <a href="https://github.com/KSUSeniorProjectNutritionApp">Github</a>
+        
 
     </div>
 
-    <p>Overview:</p>
-        <p style="font-size:1vw;">
-            Create a nutritional information database that designed to monitor and manage individual diets.
-            The application allow the user to make inform decisions for their diet by
-            using mobile device to scan and display nutritional information.
-        </p>
+    <div class="overview">
+      <h2 class="overview-title">Overview:</h2>
+      <p class="overview-paragraph">
+              Create a nutritional information database that designed to monitor and manage individual diets.
+              The application allow the user to make inform decisions for their diet by
+              using mobile device to scan and display nutritional information.
+      </p>
+    </div>
 
-    <table class="center">
-        <tr>
-            <td style="text-align: center;">
-                <img src="Member Pics/Chris.jpg" alt="" />
-                <br />
-                <p>Chris</p>
-            </td>
-            <td style="text-align: center;">
-                <img src="Member Pics/Silas.jpg" alt="" />
-                <br />
-                <p>Silas</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">
-                <img src="Member Pics/Michael.jpg" alt="" />
-                <br />
-                <p>Michael</p>
-            </td>
-            <td style="text-align: center;">
-                <img src="Member Pics/Mai.jpg" alt="" />
-                <br />
-                <p>Mai</p>
-            </td>
-        </tr>
-    </table>
+    <div class="team-grid">
+      <div class="team-member">
+        <a href="https://www.linkedin.com/in/christopher-sarzen/" style="text-decoration: none;">
+            <img src="Member Pics/Chris.jpg" alt="Chris" />
+            <p>Chris</p>
+          </a>
+      </div>
+      <div class="team-member">
+        <a href="https://www.linkedin.com/in/silas-hammond-541a932b6/" style="text-decoration: none;">
+          <img src="Member Pics/Silas.jpg" alt="Silas" />
+          <p>Silas</p>
+        </a>
+      </div>
+      <div class="team-member">
+        <a href="https://www.linkedin.com/in/michael-ehme/" style="text-decoration: none;">
+          <img src="Member Pics/Michael.jpg" alt="Michael" />
+          <p>Michael</p>
+        </a>
+      </div>
+      <div class="team-member">
+        <a href="https://www.linkedin.com/in/tho-mai-79560ba6/" style="text-decoration: none;">
+          <img src="Member Pics/Mai.jpg" alt="Mai" />
+          <p>Mai</p>
+        </a>
+      </div>
+  </div>
 
 </body>
 
